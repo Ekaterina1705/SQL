@@ -24,14 +24,11 @@ public class BankLoginTest {
     void shouldSuccessfullyLogin() {
         var LoginPage = open("http://localhost:9999",
                 ru.netology.banklogin.page.LoginPage.class);
-        LoginPage loginPage = new LoginPage();
         var AuthInfo = DataHelper.getAuthInfoWithTestData();
-        var verificationPage = loginPage.validLogin(AuthInfo);
+        var verificationPage = LoginPage.validLogin(AuthInfo);
         verificationPage.verifyVerificationPageVisiblity();
         var verificationCode = SQLHelper.getVerifycationCode();
         verificationPage.validVerify(verificationCode.getCode());
     }
-
-
 
 }

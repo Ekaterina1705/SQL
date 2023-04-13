@@ -4,9 +4,8 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
-import static com.google.common.base.Verify.verify;
+
 
 public class VerificationPage {
     @FindBy(css = "[data-test-id=code] input")

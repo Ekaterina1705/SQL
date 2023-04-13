@@ -6,7 +6,7 @@ import ru.netology.banklogin.data.DataHelper;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.page;
-import static java.awt.SystemColor.info;
+
 
 public class LoginPage {
     @FindBy(css = "[data-test-id=login] input")
